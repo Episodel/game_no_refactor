@@ -1,0 +1,81 @@
+.team__circle {
+  width: 400px;
+  height: 400px;
+  background: gray;
+  border-radius: 50%;
+  border: 20px solid orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team__name {
+  font-size: 40px;
+  color: orange;
+  text-transform: uppercase;
+}
+
+.team__shield {
+  height: 400px;
+  width: 400px;
+  border-radius: 50% 50% 51% 49% / 32% 32% 68% 68%;
+  background: linear-gradient(#ffffff, #98e7de);
+  position: relative;
+  cursor: pointer;
+
+  &__name {
+    font-size: 30px;
+    color: black;
+    margin-top: 30px;
+  }
+
+  &__inside {
+    display: flex;
+    justify-content: center;
+    height: 390px;
+    width: 390px;
+    border-radius: inherit;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__castle {
+    width: 250px;
+    height: auto;
+    position: absolute;
+    bottom: 46%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    pointer-events: none;
+  }
+}
+
+
+.sword {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: white;
+  position: relative;
+
+  &__img {
+    width: 60px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.team__black {
+  display: flex;
+}
+
+.team__white {
+  display: flex;
+  flex-direction: row-reverse;
+}

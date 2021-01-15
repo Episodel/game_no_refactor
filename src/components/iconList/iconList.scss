@@ -1,0 +1,86 @@
+.icon__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  flex-direction: column;
+}
+
+
+.icon__list {
+  list-style: none;
+  display: flex;
+  margin-top: 20px;
+
+  &__item {
+    width: 200px;
+    height: 200px;
+    background: navajowhite;
+    border-radius: 50%;
+    margin-right: 80px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.vote__icon {
+  height: 200px;
+  width: 200px;
+  position: relative;
+  border-radius: 50%;
+  //border: 1px solid rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black  ;
+
+  &__img__dragon {
+    position: absolute;
+    top: 26px;
+    left: 37px;
+    max-width: 140px;
+    height: auto;
+    pointer-events: none;
+  }
+
+  &__img__samurai {
+    position: absolute;
+    top: 17px;
+    left: 49px;
+    max-width: 119px;
+    height: auto;
+    pointer-events: none;
+  }
+
+  &__img__princess {
+    position: absolute;
+    top: 10px;
+    left: 14px;
+    max-width: 177px;
+    height: auto;
+    pointer-events: none;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: rgb(38, 57, 77) 0 20px 30px -10px;
+  }
+}
+
